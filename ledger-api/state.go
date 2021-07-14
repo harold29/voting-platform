@@ -1,4 +1,4 @@
-package electoralauthority
+package ledgerapi
 
 import "strings"
 

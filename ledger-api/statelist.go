@@ -1,4 +1,4 @@
-package electoralauthority
+package ledgerapi
 
 import (
 	"fmt"
@@ -36,7 +36,7 @@ func (sl *StateList) GetState(key string, state StateInterface) error {
 	if err != nil {
 		return err
 	} else if data == nil {
-		return fmt.Errorf("No state found for %s", key)
+		return fmt.Errorf("no state found for %s", key)
 	}
 
 	return sl.Deserialize(data, state)
